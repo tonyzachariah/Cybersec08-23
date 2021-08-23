@@ -48,7 +48,7 @@ The machines on the internal network are not exposed to the public Internet.
  Only the Jump box provisioner machine and ELK stack can accept connections from the Internet. Access to these machines is only allowed from the following IP address:
 - 173.56.251.160. We have access to the ELK GUI (Kibana) by TCP port 5601. 
 
-Machines within the network can only be accessed by the Ansible container within the jump box provisioner.
+Machines within the network can only be accessed via SSH thorugh the jump box provisioner.
 - The jump box can have access to the ELK VM. The elk server can also be accessed from my personal IP address to TCP port 5601. My personal IP address is 173.56.251.160.
 
 A summary of the access policies in place can be found in the table below.
